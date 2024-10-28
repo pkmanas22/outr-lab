@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manas Kumar Pradhan - CV</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: #2C3E50;
+            background-color: #ECF0F1;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 25px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        header h1 {
+            font-size: 2em;
+            color: #2C3E50;
+        }
+        header p {
+            font-size: 1.2em;
+            color: #bc5b1a;
+        }
+        .contact-info {
+            font-size: 0.9em;
+            color: #34495E;
+        }
+        .contact-info a,
+        a {
+            color: #1ABC9C;
+            text-decoration: none;
+        }
+        .contact-info a:hover,
+        a:hover {
+            text-decoration: underline;
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #aa0573;
+            font-size: 1.4em;
+            border-bottom: 2px solid #1ABC9C;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+        h2 a {
+            color: red;
+            text-decoration: none;
+        }
+        h2 a:hover {
+            text-decoration: none;
+        }
+        h4 {
+            font-size: 1.1em;
+            color: #34495E;
+        }
+        #summary p {
+            text-align: justify;
+        }
+        #education div div {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .project {
+            margin-bottom: 3px;
+        }
+        .project div,
+        #certifications div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .project p {
+            margin-left: 1.5em;
+        }
+        .project p code {
+            background: #585858;
+            color: #fff;
+            padding: 2px;
+        }
+        p,
+        em {
+            color: #34495E;
+            font-size: 0.95em;
+        }
+
+        /* Mobile responsive */
+        @media (max-width: 600px) {
+            body {
+                padding: 0 10px;
+            }
+
+            .container {
+                max-width: 100%;
+                padding: 15px;
+                box-shadow: none;
+            }
+
+            header h1 {
+                font-size: 1.5em;
+            }
+
+            header p {
+                font-size: 1em;
+            }
+
+            .contact-info {
+                font-size: 0.8em;
+                text-align: center;
+            }
+
+            h2 {
+                font-size: 1.2em;
+            }
+
+            h4 {
+                font-size: 1em;
+            }
+
+            .project p,
+            p,
+            em {
+                font-size: 0.85em;
+            }
+
+            #education div div,
+            .project div,
+            #certifications div {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .project p {
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Manas Kumar Pradhan</h1>
+            <p>MCA Student | Full Stack Enthusiast</p>
+            <div class="contact-info">
+                <a target="_blank" href="mailto:pkmanas22@gmail.com">pkmanas22@gmail.com</a> |
+                <a target="_blank" href="https://github.com/pkmanas22">GitHub</a> |
+                <a target="_blank" href="https://www.linkedin.com">LinkedIn</a> |
+                <a target="_blank" href="https://manaskpradhan.vercel.app">Portfolio</a>
+            </div>
+        </header>
+
+        <section id="summary">
+            <h2><a href="#summary"># </a>Professional Summary</h2>
+            <p>A proactive MCA student with a background in Computer Science, a passion for full-stack development, and
+                hands-on experience in open-source contributions and personal React projects. Seeking opportunities to
+                expand my industry knowledge and contribute to team projects.</p>
+        </section>
+
+        <section id="education">
+            <h2><a href="#education"># </a>Education</h2>
+            <div>
+                <div>
+                    <h4>Master of Computer Applications (MCA)*</h4>
+                    <i>2024-26</i>
+                </div>
+                <p>Odisha University of Technology and Research, Bhubaneswar
+                    <em>[Ongoing]</em>
+                </p>
+            </div>
+            <div>
+                <div>
+                    <h4>Bachelor of Science in Computer Science</h4>
+                    <i>2021-24</i>
+                </div>
+                <p>Fakir Mohan Autonomous College, Balasore</p>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2><a href="#projects"># </a>Top Projects</h2>
+            <div class="project">
+                <div>
+                    <h4>(1) .env.example Generator - VS Code Extension</h4>
+                    <span>
+                        <a href="#">Live link</a> | <a href="#">Code</a>
+                    </span>
+                </div>
+                <p>This extension allows users to hide sensitive data by automatically generating a
+                    <code>.env.example</code> and <code>.gitignore</code> file based on the .env file in the workspace.
+                </p>
+            </div>
+            <div class="project">
+                <div>
+                    <h4>(2) URLSnip - URL Shortener</h4>
+                    <span>
+                        <a href="#">Live link</a> | <a href="#">Code</a>
+                    </span>
+                </div>
+                <p>This project handles user authentication and offers a service to shorten long URLs with click
+                    statistics tracking.</p>
+            </div>
+            <div class="project">
+                <div>
+                    <h4>(3) InstaManas – Social Media App</h4>
+                    <span>
+                        <a href="#">Live link</a> | <a href="#">Code</a>
+                    </span>
+                </div>
+                <p>A social media app with features from Instagram and Twitter, allowing account creation, posting, and
+                    interactions.</p>
+            </div>
+            <div class="project">
+                <div>
+                    <h4>(4) Portfolio Website</h4>
+                    <span>
+                        <a href="#">Live link</a> | <a href="#">Code</a>
+                    </span>
+                </div>
+                <p>Personal portfolio showcasing information and projects using HTML and CSS.</p>
+            </div>
+            <div class="project">
+                <div>
+                    <h4>(5) #ThalaForAReason Generator</h4>
+                    <span>
+                        <a href="#">Live link</a> | <a href="#">Code</a>
+                    </span>
+                </div>
+                <p>A tool for generating personalized messages with the hashtag <code>#ThalaForAReason</code> for social
+                    media sharing.</p>
+            </div>
+            <div class="project">
+                <div>
+                    <h4>(6) Simple Calculator</h4>
+                    <span>
+                        <a href="#">Live link</a> | <a href="#">Code</a>
+                    </span>
+                </div>
+                <p>A basic calculator for performing arithmetic operations.</p>
+            </div>
+        </section>
+
+        <section id="certifications">
+            <h2><a href="#certifications"># </a>Certification Courses</h2>
+            <div>
+                <p><strong>1. Responsive Web Design</strong> by FreeCodeCamp </p>
+                <p>05/10/23 | <a href="#">Link</a></p>
+            </div>
+            <div>
+                <p><strong>2. Domestic Data Entry Operator (English)</strong> </p>
+                <p>08/02/23 | <a href="#">Link</a></p>
+            </div>
+            <div>
+                <p><strong>3. Online Digital Storytelling Workshop</strong></p>
+                <p>01/05/22 | <a href="#">Link</a></p>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2><a href="#skills"># </a>Skills</h2>
+            <div>
+                <strong>Languages:</strong>
+                <i>JavaScript, TypeScript, HTML, CSS, Java, C++, C</i>
+            </div>
+            <div>
+                <strong>Libraries & Frameworks:</strong>
+                <i>Node.js, React, Next.js, Tailwind, EJS, Prisma</i>
+            </div>
+            <div>
+                <strong>Databases:</strong>
+                <i>PostgreSQL, MongoDB, SQL</i>
+            </div>
+            <div>
+                <strong>Tools:</strong>
+                <i>Git, GitHub, npm, MS Office, VS Code, Postman, Linux, Docker, Vercel, AWS, Android Studio, Adobe Photoshop, Turborepo, Cloudflare</i>
+            </div>
+            <div>
+                <strong>Others:</strong>
+                <i>DSA (Data Structures and Algorithms), Software Engineering, Computer Networks, Computer Graphics</i>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
