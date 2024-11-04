@@ -1,181 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manas Kumar Pradhan - CV</title>
-
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: 'Roboto', sans-serif;
-            color: #2C3E50;
-            background-color: #ECF0F1;
-            line-height: 1.6;
-        }
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 25px;
-            background-color: #ffffff;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-        }
-        header {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        header h1 {
-            font-size: 2em;
-            color: #2C3E50;
-        }
-        header p {
-            font-size: 1.2em;
-            color: #bc5b1a;
-        }
-        .contact-info {
-            font-size: 0.9em;
-            color: #34495E;
-        }
-        .contact-info a,
-        a {
-            color: #1ABC9C;
-            text-decoration: none;
-        }
-        .contact-info a:hover,
-        a:hover {
-            text-decoration: underline;
-        }
-        section {
-            margin-bottom: 20px;
-        }
-        h2 {
-            color: #aa0573;
-            font-size: 1.4em;
-            border-bottom: 2px solid #1ABC9C;
-            padding-bottom: 5px;
-            margin-bottom: 10px;
-        }
-        h2 a {
-            color: red;
-            text-decoration: none;
-        }
-        h2 a:hover {
-            text-decoration: none;
-        }
-        h4 {
-            font-size: 1.1em;
-            color: #34495E;
-        }
-        #summary p {
-            text-align: justify;
-        }
-        #education div div {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-        .project {
-            margin-bottom: 3px;
-        }
-        .project div,
-        #certifications div {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .project p {
-            margin-left: 1.5em;
-        }
-        .project p code {
-            background: #585858;
-            color: #fff;
-            padding: 2px;
-        }
-        p,
-        em {
-            color: #34495E;
-            font-size: 0.95em;
-        }
-
-        /* Mobile responsive */
-        @media (max-width: 600px) {
-            body {
-                padding: 0 10px;
-            }
-
-            .container {
-                max-width: 100%;
-                padding: 15px;
-                box-shadow: none;
-            }
-
-            header h1 {
-                font-size: 1.5em;
-            }
-
-            header p {
-                font-size: 1em;
-            }
-
-            .contact-info {
-                font-size: 0.8em;
-                text-align: center;
-            }
-
-            h2 {
-                font-size: 1.2em;
-            }
-
-            h4 {
-                font-size: 1em;
-            }
-
-            .project p,
-            p,
-            em {
-                font-size: 0.85em;
-            }
-
-            #education div div,
-            .project div,
-            #certifications div {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-
-            .project p {
-                margin-left: 0;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css" id="stylesheet">
 </head>
-
 <body>
+    <button id="noStyleBtn">No Style</button>
     <div class="container">
         <header>
-            <h1>Manas Kumar Pradhan</h1>
-            <p>MCA Student | Full Stack Enthusiast</p>
+            <h1><span>M</span>anas <span>K</span>umar <span>P</span>radhan</h1>
+            <div class="typing-text">
+                <span>MCA Student |</span>
+                <span>Full Stack Enthusiast</span>
+            </div>
             <div class="contact-info">
-                <a target="_blank" href="mailto:pkmanas22@gmail.com">pkmanas22@gmail.com</a> |
-                <a target="_blank" href="https://github.com/pkmanas22">GitHub</a> |
-                <a target="_blank" href="https://www.linkedin.com">LinkedIn</a> |
+                <a target="_blank" href="mailto:pkmanas22@gmail.com">pkmanas22@gmail.com</a> •
+                <a target="_blank" href="https://github.com/pkmanas22">GitHub</a> •
+                <a target="_blank" href="https://www.linkedin.com">LinkedIn</a> •
                 <a target="_blank" href="https://manaskpradhan.vercel.app">Portfolio</a>
             </div>
+            <span>Bhubaneswar, Odisha, India, 756003</sp>
         </header>
-
         <section id="summary">
             <h2><a href="#summary"># </a>Professional Summary</h2>
-            <p>A proactive MCA student with a background in Computer Science, a passion for full-stack development, and
-                hands-on experience in open-source contributions and personal React projects. Seeking opportunities to
-                expand my industry knowledge and contribute to team projects.</p>
+            <p>Results-driven web developer with expertise in full-stack technologies, including React, Node.js, and
+                TypeScript. Experienced in building scalable applications and contributing to open-source projects.
+                Currently pursuing an MCA, with a solid academic background and hands-on experience in creating secure,
+                user-friendly web solutions. Seeking opportunities to apply technical skills in a collaborative
+                environment.</p>
         </section>
-
+        <section id="skills">
+            <h2><a href="#skills"># </a>Skills</h2>
+            <div>
+                <strong>Frontend:</strong>
+                <i>React, Tailwind CSS, Next.js, Chakra UI, Flowbite, EJS, tinyMCE, HTML, CSS</i>
+            </div>
+            <div>
+                <strong>Backend:</strong>
+                <i>Express, Node.js, REST APIs, Appwrite, Prisma, Hono, Multer</i>
+            </div>
+            <div>
+                <strong>Database:</strong>
+                <i>PostgreSQL, MongoDB, SQL</i>
+            </div>
+            <div>
+                <strong>Programming Languages:</strong>
+                <i>JavaScript, TypeScript, C++, Java</i>
+            </div>
+            <div>
+                <strong>DevOps & Tools:</strong>
+                <i>Docker, Nginx, Wrangler, Postman, Linux, GitHub Actions(CI/CD), AWS(EC2, S3), Cloudflare, Git,
+                    GitHub, Vercel, MS Office, Android Studio, Photoshop, Figma</i>
+            </div>
+            <div>
+                <strong>Core CS:</strong>
+                <i>Data Structures & Algorithms (DSA), Software Engineering, Computer Networks, Operating System</i>
+            </div>
+        </section>
+        <section id="projects">
+            <h2><a href="#projects"># </a>Top Projects</h2>
+            <div class="project">
+                <div>
+                    <h4>(1) .env.example Generator - VS Code Extension</h4>
+                    <span>
+                        <a href="#">Live demo</a> | <a href="#">Code Repo</a>
+                    </span>
+                </div>
+                <p>
+                    <button>VS code Extension</button>
+                    <button>TypeScript</button>
+                </p>
+                <p>
+                    <li>Developed a VS Code extension to auto-generate <code>.env.example</code> and
+                        <code>.gitignore</code> files, promoting
+                        security by preventing sensitive data leakage.
+                    </li>
+                    <li>Leveraged TypeScript to enhance readability and maintainability, creating a robust tool that
+                        simplifies the developer workflow.</li>
+                </p>
+            </div>
+            <div class="project">
+                <div>
+                    <h4>(2) Post Palette – Blogging Platform</h4>
+                    <span>
+                        <a href="#">Live demo</a> | <a href="#">Code Repo</a>
+                    </span>
+                </div>
+                <p>
+                    <button>React</button>
+                    <button>Appwrite</button>
+                    <button>Tailwind</button>
+                    <button>tinyMCE</button>
+                    <button>Chakra UI</button>
+                    <button>Flowbite</button>
+                </p>
+                <p>
+                    <li>Built a blogging platform with OTP-based registration, allowing users to create accounts and
+                        publish articles with a rich-text editor</li>
+                    <li>Integrated Appwrite for secure authentication and data storage, enhancing user experience and
+                        data security.</li>
+                </p>
+            </div>
+            <div class="project">
+                <div>
+                    <h4>(3) URLSnip - URL Shortener</h4>
+                    <span>
+                        <a href="#">Live demo</a> | <a href="#">Code Repo</a>
+                    </span>
+                </div>
+                <p>
+                    <button>Express</button>
+                    <button>Node.js</button>
+                    <button>MongoDB</button>
+                    <button>EJS</button>
+                    <button>CSS</button>
+                </p>
+                <p>
+                    <li>Created a URL shortening service with user authentication and click-tracking analytics, enabling
+                        users to manage their links and gain insights on engagement.</li>
+                    <li>Optimized MongoDB for efficient data retrieval, enhancing performance under high user volume.
+                    </li>
+                </p>
+            </div>
+            <div class="project">
+                <div>
+                    <h4>(4) InstaManas – Social Media Application</h4>
+                    <span>
+                        <a href="#">Live demo</a> | <a href="#">Code Repo</a>
+                    </span>
+                </div>
+                <p>
+                    <button>Next.js</button>
+                    <button>TypeScript</button>
+                    <button>Tailwind</button>
+                    <button>PostgreSQL</button>
+                    <button>AWS S3</button>
+                </p>
+                <p>
+                    <li>Designed a social media app inspired by Instagram and Twitter, allowing users to post updates
+                        and interact in real time.</li>
+                    <li>Utilized <code>AWS</code> <code>S3</code> for secure image storage and PostgreSQL for complex
+                        data operations, ensuring scalability and a seamless user experience</li>
+                </p>
+            </div>
+            <div class="project">
+                <div>
+                    <h4>(5) Portfolio Website</h4>
+                    <span>
+                        <a href="#">Live demo</a> | <a href="#">Code Repo</a>
+                    </span>
+                </div>
+                <p>
+                    <button>HTML</button>
+                    <button>CSS</button>
+                </p>
+                <p>
+                    <li>Designed a portfolio website to showcasing my web development skills.</li>
+                    <li>Integrated with <code>HTML</code> and <code>CSS</code> for better styling.</li>
+                </p>
+            </div>
+        </section>
+        <section id="opensource">
+            <h2><a href="#opensource"># </a>Open Source Contributions</h2>
+            <div class="project">
+                <div>
+                    <h4>100xdevs CMS</h4>
+                    <span>
+                        <a href="#">Link to commits</a> | <span>March 2024</span>
+                    </span>
+                </div>
+                <p>
+                    <button>Next Js</button>
+                    <button>TypeScript</button>
+                    <button>Tailwind CSS</button>
+                </p>
+                <p>
+                    <li>Contributed multiple PRs with enhancements, including custom scrollbars, loading behavior for
+                        the app bar, and improved responsiveness across devices.</li>
+                    <li>Enhanced the user experience and accessibility, boosting performance across various devices.
+                    </li>
+                </p>
+            </div>
+        </section>
         <section id="education">
             <h2><a href="#education"># </a>Education</h2>
             <div>
@@ -195,110 +203,33 @@
                 <p>Fakir Mohan Autonomous College, Balasore</p>
             </div>
         </section>
-
-        <section id="projects">
-            <h2><a href="#projects"># </a>Top Projects</h2>
-            <div class="project">
-                <div>
-                    <h4>(1) .env.example Generator - VS Code Extension</h4>
-                    <span>
-                        <a href="#">Live link</a> | <a href="#">Code</a>
-                    </span>
-                </div>
-                <p>This extension allows users to hide sensitive data by automatically generating a
-                    <code>.env.example</code> and <code>.gitignore</code> file based on the .env file in the workspace.
-                </p>
-            </div>
-            <div class="project">
-                <div>
-                    <h4>(2) URLSnip - URL Shortener</h4>
-                    <span>
-                        <a href="#">Live link</a> | <a href="#">Code</a>
-                    </span>
-                </div>
-                <p>This project handles user authentication and offers a service to shorten long URLs with click
-                    statistics tracking.</p>
-            </div>
-            <div class="project">
-                <div>
-                    <h4>(3) InstaManas – Social Media App</h4>
-                    <span>
-                        <a href="#">Live link</a> | <a href="#">Code</a>
-                    </span>
-                </div>
-                <p>A social media app with features from Instagram and Twitter, allowing account creation, posting, and
-                    interactions.</p>
-            </div>
-            <div class="project">
-                <div>
-                    <h4>(4) Portfolio Website</h4>
-                    <span>
-                        <a href="#">Live link</a> | <a href="#">Code</a>
-                    </span>
-                </div>
-                <p>Personal portfolio showcasing information and projects using HTML and CSS.</p>
-            </div>
-            <div class="project">
-                <div>
-                    <h4>(5) #ThalaForAReason Generator</h4>
-                    <span>
-                        <a href="#">Live link</a> | <a href="#">Code</a>
-                    </span>
-                </div>
-                <p>A tool for generating personalized messages with the hashtag <code>#ThalaForAReason</code> for social
-                    media sharing.</p>
-            </div>
-            <div class="project">
-                <div>
-                    <h4>(6) Simple Calculator</h4>
-                    <span>
-                        <a href="#">Live link</a> | <a href="#">Code</a>
-                    </span>
-                </div>
-                <p>A basic calculator for performing arithmetic operations.</p>
-            </div>
-        </section>
-
         <section id="certifications">
             <h2><a href="#certifications"># </a>Certification Courses</h2>
             <div>
                 <p><strong>1. Responsive Web Design</strong> by FreeCodeCamp </p>
-                <p>05/10/23 | <a href="#">Link</a></p>
+                <p>05/10/23 | <a href="#">Link to certificate</a></p>
             </div>
             <div>
                 <p><strong>2. Domestic Data Entry Operator (English)</strong> </p>
-                <p>08/02/23 | <a href="#">Link</a></p>
+                <p>08/02/23 | <a href="#">Link to certificate</a></p>
             </div>
             <div>
                 <p><strong>3. Online Digital Storytelling Workshop</strong></p>
-                <p>01/05/22 | <a href="#">Link</a></p>
-            </div>
-        </section>
-
-        <section id="skills">
-            <h2><a href="#skills"># </a>Skills</h2>
-            <div>
-                <strong>Languages:</strong>
-                <i>JavaScript, TypeScript, HTML, CSS, Java, C++, C</i>
-            </div>
-            <div>
-                <strong>Libraries & Frameworks:</strong>
-                <i>Node.js, React, Next.js, Tailwind, EJS, Prisma</i>
-            </div>
-            <div>
-                <strong>Databases:</strong>
-                <i>PostgreSQL, MongoDB, SQL</i>
-            </div>
-            <div>
-                <strong>Tools:</strong>
-                <i>Git, GitHub, npm, MS Office, VS Code, Postman, Linux, Docker, Vercel, AWS, Android Studio, Adobe Photoshop, Turborepo, Cloudflare</i>
-            </div>
-            <div>
-                <strong>Others:</strong>
-                <i>DSA (Data Structures and Algorithms), Software Engineering, Computer Networks, Computer Graphics</i>
+                <p>01/05/22 | <a href="#">Link to certificate</a></p>
             </div>
         </section>
     </div>
+    <script>
+        const btn = document.querySelector('#noStyleBtn');
+        btn.addEventListener('click', () => {
+            if (btn.innerText === "No Style") {
+                document.getElementById('stylesheet').removeAttribute("href");
+                btn.innerText = "CSS Style";
+            } else {
+                document.getElementById('stylesheet').setAttribute('href', 'style.css');
+                btn.innerText = "No Style";
+            }
+        })
+    </script>
 </body>
-
 </html>
