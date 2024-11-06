@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form || MCA @ OUTR</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Registration Form</h1>
+        <p>Kindly complete this form by providing the necessary information to enroll in MCA at <a href=""
+                target="_blank">OUTR, Bhubaneswar</a></p>
+        <form action="https://pkmanas22.github.io/college-assignment/Assignment-1/MarkSheet/">
+            <div class="additional">
+                <span>*</span>indicates a mandatory field
+            </div>
+            <fieldset id="contact">
+                <legend>Contact Information</legend>
+                <label for="first-name">
+                    <div>
+                        First Name<span>*</span>:
+                    </div>
+                    <input id="first-name" name="first-name" type="text" required />
+                </label>
+                <label for="middle-name">
+                    <div>Middle Name:</div>
+                    <input id="middle-name" name="middle-name" type="text" />
+                </label>
+                <label for="last-name">
+                    <div>
+                        Last Name<span>*</span>:
+                    </div>
+                    <input id="last-name" name="last-name" type="text" required />
+                </label>
+                <label for="email">
+                    <div>
+                        Email<span>*</span>:
+                    </div>
+                    <input id="email" name="email" type="email" required />
+                </label>
+                <label for="mob">
+                    <div>
+                        Mobile Number<span>*</span>:
+                    </div>
+                    <input id="mob" name="mob" type="number" required>
+                </label>
+            </fieldset>
+
+            <fieldset id="account">
+                <legend>Account Information</legend>
+                <div class="additional">
+                    (minimum 8 alphanumeric characters required)
+                </div>
+                <label for="new-password">
+                    <div>
+                        New Password<span>*</span>:
+                    </div>
+                    <input id="new-password" name="new-password" type="password" pattern="[a-z0-9]{8,}" required />
+                </label>
+                <label for="confirm-password">
+                    <div>
+                        Confirm Password<span>*</span>:
+                    </div>
+                    <input id="confirm-password" name="confirm-password" type="password" pattern="[a-z0-9]{8,}"
+                        required />
+                </label>
+            </fieldset>
+
+            <fieldset id="personal">
+                <legend>Personal Information</legend>
+                <label for="gender">
+                    <div>Gender<span>*</span>:</div>
+                    <label for="male">
+                        <input type="radio" name="gender" id="male" value="male" required> Male
+                    </label>
+                    <label for="female">
+                        <input type="radio" name="gender" id="female" value="female"> Female
+                    </label>
+                    <label for="other">
+                        <input type="radio" name="gender" id="other" value="other"> Other
+                    </label>
+                </label>
+                <label for="dob">Date of Birth<span>*</span>:
+                    <input type="date" name="dob" id="dob" required>
+                </label>
+                <label for="stream">Highest Qualification<span>*</span>:
+                    <select name="stream" id="stream">
+                        <option value="">(Select)</option>
+                        <option value="bsc">B. Sc</option>
+                        <option value="btech">B. Tech</option>
+                        <option value="msc">M. Sc</option>
+                        <option value="mtech">M. Tech</option>
+                        <option value="phd">PHD</option>
+                    </select>
+                </label>
+                <label class="address" for="address">
+                    <div>Communication Address<span>*</span>:</div>
+                    <textarea id="address" name="address" rows="3" cols="30" placeholder="Enter your address..."
+                        required></textarea>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Documents</legend>
+                <label for="certificate">
+                    <div>Upload Your 10th Certificate<span>*</span>:</div>
+                    <input id="certificate" type="file" name="file" required />
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Terms & Conditions</legend>
+                <label for="terms-and-conditions">
+                    <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" />
+                    I accept the <a href="#" target="">terms and conditions<span>*</span></a>
+                </label>
+            </fieldset>
+
+            <div class="btn">
+                <input type="submit" value="Submit" class="button" id="submit" />
+                <input type="reset" value="Reset" class="button" id="reset" />
+            </div>
+        </form>
+
+        <footer>
+            <p>&copy; Copyright 2023 - Developed by <a href="https://manaskpradhan.vercel.app/" target="_blank">Manas K
+                    Pradhan</a>. All right reserved.</p>
+        </footer>
+    </div>
+</body>
+
+</html>

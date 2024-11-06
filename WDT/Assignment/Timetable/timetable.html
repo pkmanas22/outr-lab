@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCA Timetable @ OUTR</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f9f9f9;
+        }
+        .timetable {
+            width: 80%;
+            margin: 50px auto;
+            background-color: #ffffff;
+            padding: 40px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        img {
+            width: 100px;
+            position: absolute;
+            left: 15%;
+            margin-top: 20px;
+        }
+        p {
+            font-size: 18px;
+        }
+        table {
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th,
+        td {
+            border: 1px solid #000;
+            padding: 10px;
+            text-align: center;
+        }
+        thead th {
+            background-color: #d3d3d3;
+        }
+        tbody td.break {
+            background-color: #fff3e6;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        tbody td.mme {
+            background-color: #ffcc99;
+        }
+        tbody td.ict {
+            background-color: #99ccff;
+        }
+        tbody td.wdt {
+            background-color: #ff9999;
+        }
+        tbody td.lab {
+            background-color: #cc99ff;
+        }
+        tbody td.oop {
+            background-color: #ffeb99;
+        }
+        tbody td.erp {
+            background-color: #ffcccc;
+        }
+        tbody td.coa {
+            background-color: #b3ff99;
+        }
+        tbody td.rm-ipr {
+            background-color: #ffccff;
+        }
+        .footer {
+            margin-top: 20px;
+            text-align: left;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="timetable">
+        <img src="logo.png" alt="">
+        <h2>ODISHA UNIVERSITY OF TECHNOLOGY AND RESEARCH</h2>
+        <p>Techno Campus, Ghatikia, P.O. Mahalaxmivihar, Bhubaneswar<br>PIN-751029</p>
+        <h3>TIME TABLE FOR 1<sup>ST</sup> SEMESTER MCA (24-25)</h3>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>DAY / TIME</th>
+                    <th>9:00 AM - 10:00 AM</th>
+                    <th>10:00 AM - 11:00 AM</th>
+                    <th>11:00 AM - 12:00 NOON</th>
+                    <th>12:00 NOON - 1:00 PM</th>
+                    <th>1:00 PM - 2:00 PM</th>
+                    <th>2:00 PM - 3:00 PM</th>
+                    <th>3:00 PM - 4:00 PM</th>
+                    <th>4:00 PM - 5:00 PM</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>MONDAY</td>
+                    <td colspan="2" class="mme">MME</td>
+                    <td colspan="2" class="ict">ICT</td>
+                    <td rowspan="5" class="break">LUNCH BREAK</td>
+                    <td colspan="2" class="erp">ERPW</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>TUESDAY</td>
+                    <td class="wdt">WDT</td>
+                    <td class="mme">MME</td>
+                    <td colspan="2" class="lab">WDT / OOP LAB</td>
+                    <td colspan="2"></td>
+                    <td class="rm-ipr">RM & IPR</td>
+                </tr>
+                <tr>
+                    <td>WEDNESDAY</td>
+                    <td colspan="2"></td>
+                    <td colspan="2" class="lab">ICT LAB</td>
+                    <td colspan="2" class="oop">OOP</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>THURSDAY</td>
+                    <td></td>
+                    <td class="wdt">WDT</td>
+                    <td colspan="2" class="lab">ICT LAB</td>
+                    <td></td>
+                    <td class="coa">COA</td>
+                    <td class="rm-ipr">RM & IPR</td>
+                </tr>
+                <tr>
+                    <td>FRIDAY</td>
+                    <td></td>
+                    <td class="wdt">WDT</td>
+                    <td class="ict">ICT</td>
+                    <td class="coa">COA</td>
+                    <td class="oop">OOP</td>
+                    <td colspan="2" class="lab">WDT / OOP LAB</td>
+                </tr>
+                <tr>
+                    <td>SATURDAY</td>
+                    <td colspan="8">REMEDIAL CLASSES, STUDENT MENTORING, INDUSTRIAL VISITS ETC. ON ODD DAYS</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="footer">
+            <p><strong>MME:</strong> Mathematical Methods in Engineering (Dr. Pradyumna Kumar Pattnaik)<br>
+                <strong>ICT:</strong> Introduction to Computational Technique using C and C++ (Mrs. Swarna Lata
+                Pati)<br>
+                <strong>WDT:</strong> Web Design and Technology (Dr. (Prof) Jibitesh Mishra)<br>
+                <strong>COA:</strong> Computer Organization and Architecture (Dr. Debasis Gountia)<br>
+                <strong>OOP:</strong> Object Oriented Programming using Python (Mr. Manjit Kumar Nayak)<br>
+                <strong>ERPW:</strong> English for Research Paper Writing (Dr. Minakshi Prasad Mishra)
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

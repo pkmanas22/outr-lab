@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    min-width: 300px;
+    max-width: 600px;
+    width: 100%;
+    line-height: 1.5;
+    font-size: 18px;
+    margin: 3em auto;
+}
+.container {
+    padding: 20px;
+    box-shadow: 3px 2px 13px 5px #45466f;
+    border-radius: 50px;
+}
+h1,p{
+    text-align: center;
+    margin: 10px 30px;
+}
+a{
+    color: #00680e;
+    margin-left: 5px;
+    font-size: 19px;
+    font-weight: 500;
+    font-style: italic;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+    color: #001068;
+}
+.additional{
+    font-size: 12px;
+    color: #646363;
+}
+.additional:last-of-type{
+    margin-left: 12px;
+}
+fieldset{
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+legend{
+    font-weight: bold;
+    color: #830267;
+    margin-left: 8px;
+    padding: 0 5px;
+    font-size: 20px;
+}
+label {
+    display: flex;
+    margin: 5px 8px;
+}
+#contact label, #account label, .address{
+    justify-content: space-between;
+}
+span{
+    margin-right: 5px;
+    font-size: 15px;
+    color: red;
+}
+input, textarea, select{
+    width: 60%;
+    margin-left: 10px;
+    padding: 4px 8px;
+    border: 0.5px solid #0b055a;
+    border-radius: 8px;
+    box-shadow: inset -2px -3px 2px rgba(44, 44, 44, 0.2);
+}
+input[type="date"], select {
+    background: none;
+    width: 25%;
+}
+input[type="radio"]{
+    margin-right: 5px;
+    box-shadow: none;
+}
+textarea, input[type="file"]{
+    resize: none;
+    font-size: 16px;
+}
+input[type="file"]{
+    height: 38px;
+}
+#terms-and-conditions{
+    width: 18px;
+    margin-right: inherit;
+    box-shadow: none;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+.button{
+    width: 40%;
+    font-size: 25px;
+    padding: 4px;
+    cursor: pointer;
+}
+.button:hover{
+    background: #71df8cf6;
+    transition: all 0.3s ease-in;
+}
+footer {
+    font-weight: 300;
+    padding: 10px;
+    font-size: 15px;
+    border-top: 4px solid #272626;
+}
