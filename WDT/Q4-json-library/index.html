@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Books, OUTR</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f9;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        th,
+        td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        .borrowed {
+            color: red;
+            font-weight: bold;
+        }
+
+        .available {
+            color: green;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Library Books, OUTR</h1>
+    <table id="books-table">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>ISBN</th>
+                <th>Genre</th>
+                <th>Publication Year</th>
+                <th>Availability</th>
+                <th>Borrowed By</th>
+                <th>Borrowed Date</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <script>
+        // JSON data
+        const libraryData = {
+            "library": [
+                {
+                    "title": "Problem Solving and Program Design in C",
+                    "author": "Jeri R. Hanly and Elliot B. Koffman",
+                    "isbn": "978-0134444505",
+                    "genre": "ICT",
+                    "publicationYear": 2016,
+                    "availability": {
+                        "status": "available",
+                        "borrowedBy": null
+                    }
+                },
+                {
+                    "title": "The C++ Programming Language",
+                    "author": "Bjarne Stroustrup",
+                    "isbn": "978-0321563842",
+                    "genre": "ICT",
+                    "publicationYear": 2013,
+                    "availability": {
+                        "status": "borrowed",
+                        "borrowedBy": {
+                            "name": "Soumya Maharana",
+                            "borrowedDate": "2024-11-29"
+                        }
+                    }
+                },
+                {
+                    "title": "Computer Organization and Architecture",
+                    "author": "William Stallings",
+                    "isbn": "978-0134101613",
+                    "genre": "COA",
+                    "publicationYear": 2015,
+                    "availability": {
+                        "status": "available",
+                        "borrowedBy": null
+                    }
+                },
+                {
+                    "title": "The Web Warrior Guide to Web Design Technologies",
+                    "author": "Don Gosselin, et. al",
+                    "isbn": "978-0619267675",
+                    "genre": "WDT",
+                    "publicationYear": 2003,
+                    "availability": {
+                        "status": "borrowed",
+                        "borrowedBy": {
+                            "name": "Rudra Parida",
+                            "borrowedDate": "2024-12-05"
+                        }
+                    }
+                },
+                {
+                    "title": "Python Object Oriented Programming",
+                    "author": "Steven F. Lott and Dusty Phillips",
+                    "isbn": "978-1785286155",
+                    "genre": "OOPS Python",
+                    "publicationYear": 2015,
+                    "availability": {
+                        "status": "available",
+                        "borrowedBy": null
+                    }
+                },
+                {
+                    "title": "Advanced Engineering Mathematics",
+                    "author": "Erwin Kreyszig",
+                    "isbn": "978-0470458365",
+                    "genre": "MME",
+                    "publicationYear": 2011,
+                    "availability": {
+                        "status": "borrowed",
+                        "borrowedBy": {
+                            "name": "Manas Kumar Pradhan",
+                            "borrowedDate": "2024-12-24"
+                        }
+                    }
+                },
+                {
+                    "title": "Research Methodology",
+                    "author": "Chawla and Sondhi",
+                    "isbn": "978-8125937180",
+                    "genre": "RM & IPR",
+                    "publicationYear": 2016,
+                    "availability": {
+                        "status": "available",
+                        "borrowedBy": null
+                    }
+                },
+                {
+                    "title": "How to Write and Publish a Scientific Paper",
+                    "author": "Robert A. Day",
+                    "isbn": "978-0521671675",
+                    "genre": "ERPW",
+                    "publicationYear": 2006,
+                    "availability": {
+                        "status": "available",
+                        "borrowedBy": null
+                    }
+                },
+            ]
+        };
+
+        // Populate the table with JSON data
+        const booksTableBody = document.querySelector('#books-table tbody');
+
+        libraryData.library.forEach((book) => {
+            const row = document.createElement('tr');
+
+            row.innerHTML = `
+                <td>${book.title}</td>
+                <td>${book.author}</td>
+                <td>${book.isbn}</td>
+                <td>${book.genre}</td>
+                <td>${book.publicationYear}</td>
+                <td class="${book.availability.status === 'available' ? 'available' : 'borrowed'}">
+                    ${book.availability.status}
+                </td>
+                <td>${book.availability.borrowedBy ? book.availability.borrowedBy.name : '---'}</td>
+                <td>${book.availability.borrowedBy ? book.availability.borrowedBy.borrowedDate : '---'}</td>
+            `;
+
+            booksTableBody.appendChild(row);
+        });
+    </script>
+</body>
+
+</html>
